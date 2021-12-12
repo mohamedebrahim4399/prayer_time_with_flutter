@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_prayer/budiness_logic/prayer_states.dart';
+import 'package:flutter_prayer/business_logic/prayer_states.dart';
 import 'package:flutter_prayer/helpers/dio_helper.dart';
 import 'package:flutter_prayer/helpers/location_helper.dart';
 import 'package:flutter_prayer/model/prayer_model.dart';

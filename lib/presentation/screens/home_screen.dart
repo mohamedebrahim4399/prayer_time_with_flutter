@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_prayer/budiness_logic/prayer_cubit.dart';
-import 'package:flutter_prayer/budiness_logic/prayer_states.dart';
+import 'package:flutter_prayer/business_logic/prayer_cubit.dart';
+import 'package:flutter_prayer/business_logic/prayer_states.dart';
 import 'package:flutter_prayer/constants/colors.dart';
 import 'package:flutter_prayer/presentation/widgets/bottom_screen.dart';
 import 'package:flutter_prayer/presentation/widgets/default_widget.dart';

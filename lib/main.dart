@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_prayer/budiness_logic/prayer_cubit.dart';
+import 'package:flutter_prayer/business_logic/prayer_cubit.dart';
 import 'package:flutter_prayer/helpers/dio_helper.dart';
 import 'package:flutter_prayer/presentation/screens/home_screen.dart';
 
