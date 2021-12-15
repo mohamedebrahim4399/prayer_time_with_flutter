@@ -103,7 +103,7 @@ class Times {
   String? asr;
   String? sunset;
   String? maghrib;
-  Isha? isha;
+  String? isha;
   String? midnight;
 
   factory Times.fromJson(Map<String, dynamic> json) => Times(
@@ -114,7 +114,7 @@ class Times {
     asr: json["Asr"],
     sunset: json["Sunset"],
     maghrib: json["Maghrib"],
-    isha: ishaValues.map[json["Isha"]],
+    isha: json["Isha"],
     midnight: json["Midnight"],
   );
 
@@ -126,25 +126,9 @@ class Times {
     "Asr": asr,
     "Sunset": sunset,
     "Maghrib": maghrib,
-    "Isha": ishaValues.reverse[isha],
+    "Isha": isha,
     "Midnight": midnight,
   };
 }
 
-enum Isha { empty }
 
-final ishaValues = EnumValues({
-  "-": Isha.empty
-});
-
-class EnumValues<T> {
-  Map<String, T> map;
-  Map<T, String>? reverseMap;
-
-  EnumValues(this.map);
-
-  Map<T, String> get reverse {
-    reverseMap ??= map.map((k, v) => MapEntry(v, k));
-    return reverseMap!;
-  }
-}

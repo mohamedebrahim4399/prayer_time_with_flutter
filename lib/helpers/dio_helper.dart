@@ -19,6 +19,7 @@ class DioHelper {
     try {
       Response response =
           await dio!.get(endPoint, queryParameters: query);
+      print(response.realUri);
       return response.data;
     } catch (e) {
       return {};
